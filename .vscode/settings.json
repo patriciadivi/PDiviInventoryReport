@@ -10,6 +10,8 @@
     ],
     "python.formatting.provider": "black",
     "conventionalCommits.scopes": [
-        "initial"
+        "initial",
+        "Development",
+        "TESTS"
     ]
 }
