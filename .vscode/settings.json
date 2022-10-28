@@ -12,6 +12,8 @@
     "conventionalCommits.scopes": [
         "initial",
         "Development",
-        "TESTS"
+        "TESTS",
+        "BUGS",
+        "ESlit"
     ]
 }
