@@ -10,8 +10,7 @@ def test_cria_produto():
         "2029-02-09",
         "FR48",
         "Ao abrigo de luz solar"
-    ) 
-    
+    )
     assert dataModel.id == 1
     assert dataModel.nome_do_produto == "Borracha"
     assert dataModel.nome_da_empresa == "Papelaria Solar"
