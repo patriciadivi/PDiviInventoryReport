@@ -10,13 +10,13 @@ class Inventory:
     def openFile(cls, filePath):
         if filePath.endswith(".csv"):  # endswith pegar o fim do paramentro
             with open(filePath, "r") as file:
-                    inventory = list(csv.DictReader(file))
-                    return inventory
+                inventory = list(csv.DictReader(file))
+                return inventory
 
         if filePath.endswith(".json"):
             with open(filePath, "r") as file:
-                    inventory = list(json.load(file))
-                    return inventory
+                inventory = list(json.load(file))
+                return inventory
 
         if filePath.endswith(".xml"):
             with open(filePath, "r") as file:
