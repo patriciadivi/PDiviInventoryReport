@@ -8,8 +8,8 @@ class Inventory:
     def openFile(cls, filePath):
         if filePath.endswith(".csv"):  # endswith pega o fim do paramentro
             with open(filePath, "r") as file:
-                  inventory = list(csv.DictReader(file))
-                  return inventory
+                inventory = list(csv.DictReader(file))
+                return inventory
 
     @classmethod
     def import_data(cls, filePath, typePath):
