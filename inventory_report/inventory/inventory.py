@@ -12,12 +12,10 @@ class Inventory:
             with open(filePath, "r") as file:
                 inventory = list(csv.DictReader(file))
                 return inventory
-
         if filePath.endswith(".json"):
             with open(filePath, "r") as file:
                 inventory = list(json.load(file))
                 return inventory
-
         if filePath.endswith(".xml"):
             with open(filePath, "r") as file:
                 inventory = xmltodict.parse(file.read())["dataset"]["record"]
