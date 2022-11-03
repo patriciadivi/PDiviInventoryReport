@@ -1,6 +1,7 @@
 from inventory_report.reports.simple_report import SimpleReport
 from inventory_report.reports.complete_report import CompleteReport
 import csv
+import json
 
 
 class Inventory:
@@ -9,6 +10,11 @@ class Inventory:
         if filePath.endswith(".csv"):  # endswith pega o fim do paramentro
             with open(filePath, "r") as file:
                 inventory = list(csv.DictReader(file))
+                return inventory
+
+        if filePath.endswith(".json"):
+            with open(filePath, "r") as file:
+                inventory = list(json.load(file))
                 return inventory
 
     @classmethod
