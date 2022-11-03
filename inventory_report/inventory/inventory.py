@@ -8,7 +8,7 @@ import xmltodict
 class Inventory:
     @classmethod
     def openFile(cls, filePath):
-        if filePath.endswith(".csv"):  # endswith pegar o fim do paramentro
+        if filePath.endswith(".csv"):  # endswith pegar o fim do paramentro.
             with open(filePath, "r") as file:
                 inventory = list(csv.DictReader(file))
                 return inventory
